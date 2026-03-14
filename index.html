@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,79 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltEdge Energy Solutions | Solar & Electrical</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        .container { max-width: 500px; margin: 0 auto; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
-        header { text-align: center; padding: 20px 0; border-bottom: 2px solid #1a73e8; position: relative; }
-        h1 { color: #1a73e8; margin: 0; font-size: 24px; text-transform: uppercase; }
-        .emergency-badge { background: #d93025; color: white; font-size: 11px; padding: 3px 8px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 5px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #0b0e14; color: #fff; line-height: 1.6; }
+        .container { max-width: 500px; margin: 0 auto; background: #161b22; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); border-radius: 12px; border: 1px solid #30363d; }
         
-        .hero-text { font-size: 18px; font-weight: bold; margin: 15px 0; color: #222; text-align: center; }
-        
-        .services-grid { background: #f9f9f9; padding: 15px; border-radius: 8px; margin: 20px 0; border: 1px solid #eee; }
-        .services-grid ul { padding-left: 20px; margin: 0; }
-        .services-grid li { margin-bottom: 8px; font-weight: 500; color: #444; }
+        /* Header Image Section */
+        header { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #30363d; }
+        .logo { width: 100%; max-width: 350px; height: auto; display: block; margin: 0 auto; }
+        .emergency-badge { background: #d93025; color: white; font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 15px; }
 
-        .cta-button { display: block; text-align: center; padding: 16px; margin: 10px 0; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .hero-text { font-size: 18px; font-weight: bold; margin: 20px 0; color: #58a6ff; text-align: center; }
+        .service-areas { font-size: 13px; color: #8b949e; margin-bottom: 10px; text-align: center; font-style: italic; }
+        
+        .services-grid { background: #0d1117; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #30363d; }
+        .services-grid h3 { margin-top:0; color: #58a6ff; font-size: 1.1em; }
+        .services-grid ul { padding-left: 20px; margin: 0; }
+        .services-grid li { margin-bottom: 10px; font-weight: 400; color: #c9d1d9; }
+
+        /* Call & WhatsApp Buttons */
+        .cta-button { display: block; text-align: center; padding: 18px; margin: 12px 0; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; transition: transform 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .cta-button:active { transform: scale(0.98); }
         .btn-call { background-color: #1a73e8; color: white; }
         .btn-whatsapp { background-color: #25D366; color: white; }
         
-        .testimonial-card { border-left: 5px solid #1a73e8; background: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; }
-        .testimonial-card p { font-style: italic; margin: 0 0 5px 0; font-size: 14px; }
+        .testimonial-card { border-left: 4px solid #58a6ff; background: #21262d; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .testimonial-card p { font-style: italic; margin: 0 0 5px 0; font-size: 14px; color: #c9d1d9; }
         .stars { color: #f4c430; font-size: 14px; }
 
-        .form-section { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-top: 20px; }
-        input, select, button { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 16px; }
-        button { background: #1a73e8; color: white; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        /* Lead Capture Form */
+        .form-section { background: #0d1117; border: 1px solid #30363d; padding: 20px; border-radius: 8px; margin-top: 20px; }
+        .form-section h3 { margin-top: 0; color: #58a6ff; }
+        input, select, button { width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #30363d; border-radius: 6px; box-sizing: border-box; font-size: 16px; background: #161b22; color: #fff; }
+        button { background: #58a6ff; color: #0d1117; border: none; font-weight: bold; cursor: pointer; margin-top: 15px; text-transform: uppercase; }
         
-        footer { text-align: center; margin-top: 30px; padding: 20px 10px; border-top: 1px solid #eee; }
-        .tagline { color: #1a73e8; font-weight: bold; font-style: italic; margin-bottom: 10px; font-size: 15px; letter-spacing: 0.5px; }
-        .copyright { font-size: 12px; color: #888; }
+        footer { text-align: center; margin-top: 30px; padding: 20px 10px; border-top: 1px solid #30363d; }
+        .tagline { color: #58a6ff; font-weight: bold; font-style: italic; margin-bottom: 12px; font-size: 14px; letter-spacing: 0.5px; }
+        .copyright { font-size: 11px; color: #8b949e; line-height: 1.4; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>VoltEdge Energy Solutions</h1>
+        <!-- Place your logo image here -->
+        <img src="YOUR_IMAGE_LINK_HERE" alt="VoltEdge Logo" class="logo">
         <div class="emergency-badge">🚨 24/7 EMERGENCY SERVICE</div>
-        <p style="margin:5px 0; color:#666; font-weight: bold;">Pty Ltd</p>
     </header>
 
     <div class="hero-text">
-        Professional Electrical & Solar Solutions <br>
-        <span style="color:#1a73e8; font-size: 14px;">Serving Pretoria, Midrand & Surrounding Areas</span>
+        Expert Electrical & Solar Solutions
+    </div>
+    
+    <div class="service-areas">
+        📍 Serving: Soshanguve, Pretoria, Centurion, Midrand & Brits
     </div>
 
-    <!-- Contact Actions -->
+    <!-- FIXED CONTACT BUTTONS -->
     <a href="tel:0614085333" class="cta-button btn-call">📞 CALL 061 408 5333</a>
+    
+    <!-- Updated WhatsApp with your number +27 61 408 5333 -->
     <a href="https://wa.me." class="cta-button btn-whatsapp">💬 WHATSAPP US</a>
 
     <div class="services-grid">
-        <h3 style="margin-top:0; color: #1a73e8;">Our Expertise</h3>
+        <h3>Our Expertise</h3>
         <ul>
-            <li><strong>Tubing & Wiring</strong> (New Builds & Renovations)</li>
-            <li>Solar Installations & Battery Backup Systems</li>
-            <li>Residential & Commercial Installations</li>
+            <li><strong>Tubing & Wiring</strong> (Construction & Renovations)</li>
+            <li>Solar Systems & Battery Backup Installations</li>
+            <li>Electrical Maintenance & New Installations</li>
             <li>DB Board Upgrades & Fault Finding</li>
-            <li>Gate Motor Installations & Repairs</li>
-            <li>Electrical Compliance Certificates (COC)</li>
+            <li>Certificates of Compliance (COC)</li>
+            <li>Gate Motors & Security Systems</li>
         </ul>
     </div>
 
-    <!-- Social Proof -->
+    <!-- Trust Building -->
     <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p>"Fast response for my solar backup. Highly professional team!"</p>
-        <small><strong>- Happy Client, Centurion</strong></small>
+        <p>"Professional service and very tidy work on our new solar setup. Highly recommended."</p>
+        <small><strong>- Client from Soshanguve</strong></small>
     </div>
 
-    <!-- Quote Form -->
+    <!-- Lead Capture -->
     <div class="form-section">
-        <h3 style="margin-top:0;">Request a Free Quote</h3>
+        <h3>Request a Free Quote</h3>
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="tel" placeholder="Phone Number" required>
             <select>
+                <option value="" disabled selected>Select Service Needed</option>
                 <option>Tubing & Wiring</option>
                 <option>Solar Installation</option>
                 <option>Electrical Repair</option>
@@ -92,14 +107,13 @@
         <div class="tagline">Solar Intelligence, Electrical Integrity</div>
         <div class="copyright">
             &copy; 2026 VoltEdge Energy Solutions Pty Ltd <br>
-            Certified Electricians | Quality Workmanship Guaranteed
+            Certified Electricians | Pretoria & Surrounding Areas
         </div>
     </footer>
 </div>
 
 </body>
 </html>
-
 
 
         
